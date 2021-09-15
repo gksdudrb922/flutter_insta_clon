@@ -248,6 +248,8 @@ PODS:
   - firebase_core (0.0.1):
     - Firebase/Core
     - Flutter
+  - firebase_core_web (0.1.0):
+    - Flutter
   - firebase_storage (0.0.1):
     - Firebase/Storage
     - Flutter
@@ -294,10 +296,14 @@ PODS:
   - FirebaseStorage (3.9.1):
     - FirebaseCore (~> 6.10)
     - GTMSessionFetcher/Core (~> 1.1)
-  - Flutter (1.0.0)
+  - Flutter (2.5)
+  - flutter_plugin_android_lifecycle (0.0.1):
+    - Flutter
   - google_sign_in (0.0.1):
     - Flutter
     - GoogleSignIn (~> 5.0)
+  - google_sign_in_web (0.8.1):
+    - Flutter
   - GoogleAppMeasurement (6.9.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
     - GoogleUtilities/MethodSwizzler (~> 6.7)
@@ -371,9 +377,11 @@ DEPENDENCIES:
   - cloud_firestore (from `.symlinks/plugins/cloud_firestore/ios`)
   - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
+  - firebase_core_web (from `.symlinks/plugins/firebase_core_web/ios`)
   - firebase_storage (from `.symlinks/plugins/firebase_storage/ios`)
-  - Flutter (from `Flutter`)
+  - flutter_plugin_android_lifecycle (from `.symlinks/plugins/flutter_plugin_android_lifecycle/ios`)
   - google_sign_in (from `.symlinks/plugins/google_sign_in/ios`)
+  - google_sign_in_web (from `.symlinks/plugins/google_sign_in_web/ios`)
   - image_picker (from `.symlinks/plugins/image_picker/ios`)
 
 SPEC REPOS:
@@ -389,6 +397,7 @@ SPEC REPOS:
     - FirebaseFirestore
     - FirebaseInstallations
     - FirebaseStorage
+    - Flutter
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleSignIn
@@ -408,12 +417,16 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/firebase_auth/ios"
   firebase_core:
     :path: ".symlinks/plugins/firebase_core/ios"
+  firebase_core_web:
+    :path: ".symlinks/plugins/firebase_core_web/ios"
   firebase_storage:
     :path: ".symlinks/plugins/firebase_storage/ios"
-  Flutter:
-    :path: Flutter
+  flutter_plugin_android_lifecycle:
+    :path: ".symlinks/plugins/flutter_plugin_android_lifecycle/ios"
   google_sign_in:
     :path: ".symlinks/plugins/google_sign_in/ios"
+  google_sign_in_web:
+    :path: ".symlinks/plugins/google_sign_in_web/ios"
   image_picker:
     :path: ".symlinks/plugins/image_picker/ios"
 
@@ -425,6 +438,7 @@ SPEC CHECKSUMS:
   Firebase: c23a36d9e4cdf7877dfcba8dd0c58add66358999
   firebase_auth: d99b993c1405096e66c58211b1cd956c23eed1c5
   firebase_core: 335c02abd48672b7c83c683df833d0488a72e73e
+  firebase_core_web: d501d8b946b60c8af265428ce483b0fff5ad52d1
   firebase_storage: 22966fce4aa6e8848cbaa017df62107cee29f327
   FirebaseAnalytics: 3bb096873ee0d7fa4b6c70f5e9166b6da413cc7f
   FirebaseAuth: c92d49ada7948d1a23466e3db17bc4c2039dddc3
@@ -433,8 +447,10 @@ SPEC CHECKSUMS:
   FirebaseFirestore: 9b2f1b9b9a6f2f0b6fb7484b9e32ab7e39243554
   FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
   FirebaseStorage: 15e0f15ef3c7fec3d1899d68623e47d4447066b4
-  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  Flutter: 4e094eefe76d76f60537272587a6eb1abcf12d09
+  flutter_plugin_android_lifecycle: dc0b544e129eebb77a6bfb1239d4d1c673a60a35
   google_sign_in: 6bd214b9c154f881422f5fe27b66aaa7bbd580cc
+  google_sign_in_web: 52deb24929ac0992baff65c57956031c44ed44c3
   GoogleAppMeasurement: a6a3a066369828db64eda428cb2856dc1cdc7c4e
   GoogleDataTransport: f56af7caa4ed338dc8e138a5d7c5973e66440833
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
@@ -448,6 +464,6 @@ SPEC CHECKSUMS:
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+PODFILE CHECKSUM: ebd43b443038e611b86ede96e613bd6033c49497
 
 COCOAPODS: 1.11.2
